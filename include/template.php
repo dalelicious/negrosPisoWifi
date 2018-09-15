@@ -39,15 +39,16 @@
 						<span class="icon-bar"></span>
 					</button>
 					<div style="margin-left: 24px;">
-						<a class="navbar-brand" href="#" style="margin-top:0;padding-top:12px;"><img src="../include/img/logo.png" height="25px"></a>
+						<a class="navbar-brand" href="../home/" style="margin-top:0;padding-top:12px;"><img src="../include/img/logo.png" height="25px"></a>
 					</div>
 				</div>
 
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#" class="uppercase">Home</a></li>
-						<li><a href="#" class="uppercase">Shop</a></li>
-						<li><a href="#" class="uppercase">Login</a></li>
+						<li><a href="../home/" class="uppercase">Home</a></li>
+						<li><a href="#" class="uppercase">Blog</a></li>
+						<li><a href="#" class="uppercase">FAQ</a></li>
+						<li><a href="#" class="uppercase">Contact Us</a></li>
 					</ul>
 				</div>
 			</div>
@@ -60,8 +61,8 @@
 					<div class="container">
 						<div class="col-md-12">
 							<div class="container">
-								<h2 class=" text-white header-text-big">All you need is love and a cup of coffee.</h2>  
-								<h2 class=" text-white header-text-small">You can't buy happiness but you can buy coffee and that's pretty close.</h2> 
+								<h2 class=" text-white header-text-big">Start your business with minimal capital only</h2>  
+								<h2 class=" text-white header-text-small">High quality and low cost maintenance</h2> 
 								<a class="btn btn-primary" href="#" style="margin-top:24px;">Shop Now</a>
 							</div>
 						</div>
@@ -72,45 +73,9 @@
 		<!-- End Banner -->
 		<!-- Start Content -->
 		<div class="main">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="container-fluid">
-							<div class="panel panel-default" style="border:1px solid #ddd;">
-								<div class="panel-heading">
-									<span class="uppercase">Trending Sellers</span>
-								</div>
-								<div class="panel-body no-gap">
-									<div class="container-fluid" style="">
-										<div class="row aligned-row">
-											<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 shop-margin">
-												<div class="item-holder">
-													<a href="#">
-														<div class="item-image img-responsive" style="max-height:200px;background-image: url('../include/img/upload/sleepnot.jpg');">
-														</div>
-														<div class="item-brand">
-															SLEEPNOT
-														</div>
-														<div class="item-name">
-															ICED COFFEE
-														</div>
-														<div class="item-description">
-															Iced coffee is cold coffee with ice. The iced latte and iced mocha are examples. There are various brewing methods, with the fundamental division being cold brew.                                        
-														</div>
-														<div class="item-price">
-															PHP 45.00
-														</div>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>   
-						</div>
-					</div>
-				</div>
-			</div>
+			<?php
+				include $content;
+			?>
 		</div>
 		<!-- End Content -->
 		<!-- Start Footer -->
