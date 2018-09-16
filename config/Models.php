@@ -1,10 +1,17 @@
 <?php
 include "CRUD.php";
 
-// User Models
+// Items Models
 function items() {
 	$crud = new CRUD;
 	$crud->table = "items";
+	return $crud;
+}
+
+// Blog Models
+function blog() {
+	$crud = new CRUD;
+	$crud->table = "blog";
 	return $crud;
 }
 

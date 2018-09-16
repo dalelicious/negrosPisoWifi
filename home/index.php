@@ -11,6 +11,11 @@ switch ($view) {
 		$template	= '../include/template.php';
 		break;
 	
+	case 'blogDetail' :
+		$content 	= 'blogDetail.php';
+		$template	= '../include/template.php';
+		break;
+	
 	case 'contactUs' :
 		$content 	= 'contactUs.php';
 		$template	= '../include/template.php';

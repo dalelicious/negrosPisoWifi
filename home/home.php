@@ -20,19 +20,24 @@ $itemList = items()->list();
 								<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 shop-margin">
 									<div class="item-holder">
 										<a href="../home?view=itemsDetail&id=<?=$row->Id;?>">
-											<div class="item-image img-responsive" style="max-height:200px;background-image: url('../include/img/upload/<?=$row->item_img;?>');">
+											<?php if ($row->image != null) {?>
+											<div class="item-image img-responsive" style="max-height:200px;background-image: url('../include/img/upload/<?=$row->image;?>');">
 											</div>
+											<?php }else { ?>
+											<div class="item-image img-responsive" style="max-height:200px;background-image: url('../include/img/no-image.png');">
+											</div>
+											<?php } ?>
 											<div class="item-brand">
-												<?=$row->item_brand;?>
+												<?=$row->brand;?>
 											</div>
 											<div class="item-name">
-												<?=$row->item_name;?>
+												<?=$row->name;?>
 											</div>
 											<div class="item-description">
-												<?=$row->item_description;?>                                     
+												<?=$row->description;?>                                     
 											</div>
 	                                        <div class="item-price">
-												PHP <?=$row->item_price;?> 
+												PHP <?=$row->price;?> 
 	                                        </div>
 										</a>
 									</div>
