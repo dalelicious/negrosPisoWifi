@@ -1,3 +1,7 @@
+<?php
+$view = (isset($_GET['view']) && $_GET['view'] != '') ? $_GET['view'] : '';
+?>
+
 <!DOCTYPE html>
 	<!-- Start Head -->
 	<head>
@@ -46,9 +50,9 @@
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="../home/" class="uppercase">Home</a></li>
-						<li><a href="#" class="uppercase">Blog</a></li>
-						<li><a href="#" class="uppercase">FAQ</a></li>
-						<li><a href="#" class="uppercase">Contact Us</a></li>
+						<li><a href="../home/?view=blog" class="uppercase">Blog</a></li>
+						<li><a href="../home/?view=faq" class="uppercase">FAQ</a></li>
+						<li><a href="../home/?view=contactUs" class="uppercase">Contact Us</a></li>
 					</ul>
 				</div>
 			</div>
@@ -56,19 +60,9 @@
 		<!-- End Navigation -->
 		<!-- Start Banner -->
 		<div class="">
-			<div class="header-wrapper">
-				<div class="bg-header img-responsive" style="">
-					<div class="container">
-						<div class="col-md-12">
-							<div class="container">
-								<h2 class=" text-white header-text-big">Start your business with minimal capital only</h2>  
-								<h2 class=" text-white header-text-small">High quality and low cost maintenance</h2> 
-								<a class="btn btn-primary" href="#" style="margin-top:24px;">Shop Now</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		<?php if ($view == null) { ?>
+			<?php require_once '../home/header.php'?>
+		<?php } ?>
 		</div>
 		<!-- End Banner -->
 		<!-- Start Content -->

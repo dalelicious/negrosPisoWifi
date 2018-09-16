@@ -32,6 +32,7 @@ $itemList = items()->list();
 												<?=$row->item_description;?>                                     
 											</div>
 	                                        <div class="item-price">
+												PHP <?=$row->item_price;?> 
 	                                        </div>
 										</a>
 									</div>

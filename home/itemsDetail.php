@@ -21,7 +21,7 @@ $item = items()->get("id='$id'");
             <div class="product-desc"><?=$item->item_description;?></div>
             <hr>
 
-            <div class="product-price uppercase" style="color: #333;"></div>
+            <div class="product-price uppercase" style="color: #333;">PHP <?=$item->item_price;?></div>
           </div>
         </div>
       </div> 
