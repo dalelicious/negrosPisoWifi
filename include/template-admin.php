@@ -18,7 +18,7 @@ $view = (isset($_GET['view']) && $_GET['view'] != '') ? $_GET['view'] : '';
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="description" content="">
         <meta name="author" content="Negros Piso Wifi">
-        <link rel="icon" href="#">
+        <link rel="icon" href="../include/img/pisowifi.ico">
         <link href="../include/css/bootstrap.min.css" rel="stylesheet">
         <link href="../include/css/stylesheet.min.css" rel="stylesheet" type="text/css">
         <link href="../include/css/step-wizard.css" rel="stylesheet" type="text/css">
@@ -90,7 +90,7 @@ $view = (isset($_GET['view']) && $_GET['view'] != '') ? $_GET['view'] : '';
                                         <li class="bordered-s no-gap"><a href='../admin/'>Product Designs</a></li>
                                         <li class="bordered-s no-gap"><a href='../admin/?view=blogList'>Blog<span id="order-badge-counter" class="badge pull-right"></span></a></li>
                                         <li class="bordered-s no-gap"><a href='#'>FAQ</a></li>
-                                        <li class="bordered-s no-gap"><a href='#'>Users</a></li>
+                                        <li class="bordered-s no-gap"><a href='../admin/?view=userList'>Users</a></li>
                                     </ul>
                                 </div>
                                 <!-- End of Sidenav -->

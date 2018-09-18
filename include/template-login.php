@@ -13,7 +13,7 @@ $view = (isset($_GET['view']) && $_GET['view'] != '') ? $_GET['view'] : '';
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="description" content="">
         <meta name="author" content="Negros Piso Wifi">
-        <link rel="icon" href="#">
+        <link rel="icon" href="../include/img/pisowifi.ico">
         <link href="../include/css/bootstrap.min.css" rel="stylesheet">
         <link href="../include/css/stylesheet.min.css" rel="stylesheet" type="text/css">
         <link href="../include/css/step-wizard.css" rel="stylesheet" type="text/css">

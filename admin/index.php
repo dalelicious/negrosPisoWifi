@@ -18,6 +18,12 @@ switch ($view) {
 		$template	= '../include/template-admin.php';
 		break;
 	
+	case 'userList' :
+		$currentSession = isset($_SESSION["admin_session"]);
+		$content 	= 'userList.php';
+		$template	= '../include/template-admin.php';
+		break;
+	
 	case 'addBlog' :
 		$currentSession = isset($_SESSION["admin_session"]);
 		$content 	= 'addBlog.php';
