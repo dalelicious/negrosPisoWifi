@@ -25,7 +25,22 @@ $userList = users()->list();
             <div class="panel-body no-gap">
                 <div class="table-container" style="margin-top: 8px;">
                     <table class="table table-filter">
-                        
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                            </tr>
+                        </thead>
+                        <?php foreach($userList as $row){ ?>
+                        <tbody>
+                            <tr>
+                                <th><?=$row->username;?></th>
+                                <th><?=$row->first_name;?></th>
+                                <th><?=$row->last_name;?></th>
+                            </tr>
+                        </tbody>
+                        <?php } ?>
                     </table>
                 </div>
             </div>
