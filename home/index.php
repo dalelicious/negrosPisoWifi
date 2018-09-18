@@ -30,6 +30,11 @@ switch ($view) {
 		$content 	= 'itemsDetail.php';
 		$template	= '../include/template.php';
 		break;
+
+	case 'reseller' :
+		$content 	= 'reseller.php';
+		$template	= '../include/template.php';
+		break;
 			
 	default :
 		$content 	= 'home.php';

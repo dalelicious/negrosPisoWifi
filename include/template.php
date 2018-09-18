@@ -9,9 +9,13 @@ $view = (isset($_GET['view']) && $_GET['view'] != '') ? $_GET['view'] : '';
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<meta name="description" content="">
+		<meta name="description" content="Piso Wifi">
+		<meta name="description" content="Piso Wifi Vending Machine">
+		<meta name="description" content="Wifi Hotspot">
+		<meta name="description" content="Piso Wifi Bacolod">
+		<meta name="description" content="Ado Piso Wifi">
 		<meta name="author" content="Negros Piso Wifi">
-		<link rel="icon" href="#">
+		<link rel="icon" href="../include/img/pisowifi.ico">
 		<link href="../include/css/bootstrap.min.css" rel="stylesheet">
 		<link href="../include/css/stylesheet.min.css" rel="stylesheet" type="text/css">
 		<link href="../include/css/step-wizard.css" rel="stylesheet" type="text/css">
@@ -43,13 +47,15 @@ $view = (isset($_GET['view']) && $_GET['view'] != '') ? $_GET['view'] : '';
 						<span class="icon-bar"></span>
 					</button>
 					<div style="margin-left: 24px;">
-						<a class="navbar-brand" href="../home/" style="margin-top:0;padding-top:12px;"><img src="../include/img/logo.png" height="25px"></a>
+						<a class="navbar-brand" href="../home/" "style="margin-top:0;padding-top:12px;"><img src="../include/img/logo.png" height="30px"></a>
 					</div>
 				</div>
 
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="../home/" class="uppercase">Home</a></li>
+						<li><a href="../home/?view=reseller" class="uppercase">Our Reseller</a></li>
+						<li><a href="https://www.facebook.com/groups/294521197818788/" target="_blank" class="uppercase">Community</a></li>
 						<li><a href="../home/?view=blog" class="uppercase">Blog</a></li>
 						<li><a href="../home/?view=faq" class="uppercase">FAQ</a></li>
 						<li><a href="../home/?view=contactUs" class="uppercase">Contact Us</a></li>
@@ -79,9 +85,9 @@ $view = (isset($_GET['view']) && $_GET['view'] != '') ? $_GET['view'] : '';
 			</div>
 			<div class="second-bar">
 				<div class="container">
-					<span style="width: 10px;">Negros Piso Wifi © 2018</span>
+					<span style="width: 10px;">Negros Piso Wifi © 2018</span><br>Negros Occidental, Bacolod City 6100
 					<div class="" style="margin:0;padding:0;">
-						<a href="#" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+						<a href="https://twitter.com/PisoWifi/" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
 						<a href="https://www.facebook.com/negrospisowifi/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
 						<a href="https://www.instagram.com/negrospisowifi/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
 					</div>

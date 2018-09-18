@@ -8,7 +8,7 @@ $itemList = items()->list();
 			<div class="container-fluid">
 				<div class="panel panel-default" style="border:1px solid #ddd;">
 					<div class="panel-heading">
-						<span class="uppercase">Product Designs</span>
+						<span class="uppercase">Basic Parts</span>
 					</div>
 					<div class="panel-body no-gap">
 						<div class="container-fluid" style="">
