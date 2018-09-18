@@ -1,7 +1,3 @@
-<?php
-$blogList = blog()->list();
-?>
-
 <div class="container">
 	<div class="content-wrapper">
 		<div class="item-container">

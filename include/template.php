@@ -1,19 +1,29 @@
 <?php
+
 $view = (isset($_GET['view']) && $_GET['view'] != '') ? $_GET['view'] : '';
+
 ?>
 
 <!DOCTYPE html>
 	<!-- Start Head -->
 	<head>
+
+		<!-- Globalsite tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125953653-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-125953653-1');
+		</script>
+		<meta property="og:url" 	content="https://negrospisowifi.com">
+		<meta property="og:type" 	content="website">
+		<meta property="og:title" 	content="Negros Piso Wifi">
+		<meta name="keywords" 		content="vendo machine piso wifi, bacolod piso wifi, bacolod ado piso wifi, bacolod wifi piso for sale, for sale piso wifi, piso wifi bacolod city, Piso Wifi,piso">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<meta name="description" content="Piso Wifi">
-		<meta name="description" content="Piso Wifi Vending Machine">
-		<meta name="description" content="Wifi Hotspot">
-		<meta name="description" content="Piso Wifi Bacolod">
-		<meta name="description" content="Ado Piso Wifi">
 		<meta name="author" content="Negros Piso Wifi">
 		<link rel="icon" href="../include/img/pisowifi.ico">
 		<link href="../include/css/bootstrap.min.css" rel="stylesheet">
@@ -23,9 +33,8 @@ $view = (isset($_GET['view']) && $_GET['view'] != '') ? $_GET['view'] : '';
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-		<title></title>
+		<title>Negros Piso Wifi</title>
 		<!-- Bootstrap core CSS -->
-
 		<link href="../include/css/dataTables.material.min.css" rel="stylesheet">
 		<link href="../include/css/material.min.css" rel="stylesheet">
 		<link href="../include/css/bootstrap-switch.min.css" rel="stylesheet">

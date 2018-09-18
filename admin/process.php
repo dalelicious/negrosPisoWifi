@@ -1,11 +1,19 @@
 <?php
-
+session_start();
 require_once '../config/database.php';
 require_once '../config/Models.php';
 
 $action = $_GET['action'];
 
 switch ($action) {
+
+	case 'login' :
+		login();
+		break;
+
+	case 'logout' :
+		logout();
+		break;
 
 	case 'addItem' :
 		addItem();
@@ -16,6 +24,30 @@ switch ($action) {
 		break;
 
 	default :
+}
+
+function login()
+{
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+
+	$result = users()->get("username='$username' and password='$password'");
+
+	if ($result != 0 ){
+		$_SESSION['admin_session'] = $username;
+		header('Location: ../admin/');
+	}else{
+		header('Location: ../admin/');
+	}
+
+}
+
+function logout()
+{
+	session_start();
+	session_destroy();
+	header('Location: ../admin/');
+	exit;	
 }
 
 function addItem()

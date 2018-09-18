@@ -1,10 +1,5 @@
 <?php
 
-if(!$currentSession)
-    {
-        header('Location: ../admin/?view=welcome');
-    }
-
 $view = (isset($_GET['view']) && $_GET['view'] != '') ? $_GET['view'] : '';
 
 ?>
@@ -55,15 +50,7 @@ $view = (isset($_GET['view']) && $_GET['view'] != '') ? $_GET['view'] : '';
 
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" style="font-size:14px;font-weight:400;" data-toggle="dropdown" href="">
-                            <span id="status-indicator" class="green">&#9679;</span>
-                                ADMIN
-                            <span class="caret"></span></a>
-                            <ul class="dropdown-menu" style="background-color: #f7f7f7;">
-                                <li><a id="btn-logout" href="../admin/process.php?action=logout">Logout</a></li>
-                            </ul>
-                        </li>
+                        <li><a class="uppercase" href="" data-toggle="modal" data-target="#modal-login">Login</a></li>
                     </ul>
                 </div>
             </div>
@@ -76,28 +63,10 @@ $view = (isset($_GET['view']) && $_GET['view'] != '') ? $_GET['view'] : '';
                     <div class="">
                         <div class="row" style="margin-top: 24px; margin-bottom: 24px;">
                             <div class="col-lg-3 col-md-3">
-                                <div class="" style="display:inline-block;width:100%;background:#fff;border:1px solid rgba(0,0,0,0.1);">
-                                    <div class="" style="display:inline-block;">
-                                        <label id="shop-cpanel-id" class="roboto" style="padding: 16px 16px 16px 16px;margin:0;">ADMIN<label>
-                                    </div>
-                                    <div id="shop-status-container" style="display:none;float:right;margin-right:0;padding-right:0;">
-                                    </div>
-                                </div>
-                                <!-- Sidenav Filter Left -->
-                                <div class="sidebar" style="margin-bottom: 16px;">
-                                    <span style="padding-top:14px;padding-bottom:4px;display:block;" class="thick">Control Panel</span>
-                                    <ul class="nav nav-stacked" style="background-color:#ffffff; ">
-                                        <li class="bordered-s no-gap"><a href='../admin/'>Product Designs</a></li>
-                                        <li class="bordered-s no-gap"><a href='../admin/?view=blogList'>Blog<span id="order-badge-counter" class="badge pull-right"></span></a></li>
-                                        <li class="bordered-s no-gap"><a href='#'>FAQ</a></li>
-                                        <li class="bordered-s no-gap"><a href='#'>Users</a></li>
-                                    </ul>
-                                </div>
-                                <!-- End of Sidenav -->
                             </div>
 
                             <div class="container-fluid">
-                                <div class="col-lg-9 col-md-9" style="margin:0;padding:0;">
+                                <div class="col-lg-12 col-md-12" style="margin:0;padding:0;">
                                     <div class="main-wrapper bordered">
                                         <div class="container-fluid">
                                             <div class="row">
@@ -109,12 +78,52 @@ $view = (isset($_GET['view']) && $_GET['view'] != '') ? $_GET['view'] : '';
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- End Content -->
+
+        <!-- Start Login Modal -->
+        <div id="modal-login" class="modal" role="dialog" aria-labelledby="myModalLabel">
+            <div class="">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="col-md-12 no-gap">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading uppercase">LOGIN AS ADMIN</div>
+                                    <div class="panel-body" style="margin-top: 32px;">
+                                        <form class="form-horizontal" action="../admin/process.php?action=login" method="POST">
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Username</label>
+                                                <div class="col-md-6">
+                                                    <input style="font-size:13px;" type="username" class="form-control" name="username" autocomplete="off" value="" required autofocus>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Password</label>
+                                                <div class="col-md-6">
+                                                    <input style="font-size:13px;" type="password" class="form-control" name="password" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-6 col-md-offset-4">
+                                                    <button type="submit" class="btn btn-primary btn-block uppercase">
+                                                        Login
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Login Modal -->
         <!-- Start Footer -->
         <footer id="myFooter">
             <div class="container">
