@@ -1,4 +1,4 @@
-<div class="" style="text-align:center;padding:15px;"> Our Resellers </div>
+<div class="" style="text-align:center;padding:15px;"> Our Official Resellers </div>
 
 <div class="container">
 	<div class="content-wrapper">
@@ -8,9 +8,9 @@
 					<!-- Column -->
 							<div class="col-lg-4">
 								<div class="card">
-									<a class="itemview-img" href="https://www.facebook.com/mtechpisonetcomputer/" target="_blank" style="max-height:300px;background-image: url('../include/img/mtech.jpg');">
+									<a class="itemview-img"  href="https://www.facebook.com/mtechpisonetcomputer/" target="_blank" style="max-height:300px;background-image: url('../include/img/mtech.jpg');">
 									</a>
-									<div class="card-block">
+									<div class="card">
 											<a class="facebook" href="https://www.facebook.com/mtechpisonetcomputer/" target="_blank"> Mtech Piso Computer Services </a>
 										<li class="font-normal"> San Juan, San Sebastian Street Dawis, Bacolod City</li>
 										<li class="font-normal"> Contact Number: 09985944429</li>

@@ -60,3 +60,57 @@ $itemList = items()->list();
 		</div>
 	</div>
 </div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="container-fluid">
+				<div class="panel panel-default" style="border:1px solid #ddd;">
+					<div class="panel-heading">
+						<span class="uppercase">Tutorial Videos</span>
+					</div>
+			<div class="container-fluid">	
+				<div class="row" style="margin-bottom: 15px;">
+					<!-- Column -->
+							<div class="col-lg-4">
+								<div class="card">
+													<h4><div align="center"> How do customers connect?</h4>
+													<div class="embed-responsive embed-responsive-16by9">
+														<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tI_z7vSe5U8" frameborder="1" allow="autoplay; encrypted-media" allowfullscreen>
+														</iframe>
+													</div>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="card">
+													<h4><div align="center"> How to setup Raspberry Pi</h4>
+													<div class="embed-responsive embed-responsive-16by9">
+													<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/e5yMbFIsDSU" frameborder="1" allow="autoplay; encrypted-media" allowfullscreen>
+														</iframe>
+													</div>
+
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="card">
+													<h4><div align="center"> How to setup All in One Relay Module</h4> 
+													<div class="embed-responsive embed-responsive-16by9">
+													<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NJ24FNK0wsc" frameborder="1" allow="autoplay; encrypted-media" allowfullscreen>
+														</iframe>
+													</div>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="card">
+									
+									<div class="card-block">
+											
+									</div>
+								</div>
+							</div>
+					<!-- Column -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
