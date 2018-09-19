@@ -8,7 +8,7 @@ $itemList = items()->list();
 			<div class="container-fluid">
 				<div class="panel panel-default" style="border:1px solid #ddd;">
 					<div class="panel-heading">
-						<span class="uppercase">Basic Parts</span>
+						<span class="uppercase">Product Designs</span>
 					</div>
 					<div class="panel-body no-gap">
 						<div class="container-fluid" style="">
@@ -24,7 +24,7 @@ $itemList = items()->list();
 											<div class="item-image img-responsive" style="max-height:200px;background-image: url('../include/img/upload/<?=$row->image;?>');">
 											</div>
 											<?php }else { ?>
-											<div class="item-image img-responsive" style="max-height:200px;background-image: url('../include/img/no-image.png');">
+											<div class="item-image img-responsive" style="max-height:200px;background-image: url('../include/img/upload/1.jpg');">
 											</div>
 											<?php } ?>
 											<div class="item-brand">
