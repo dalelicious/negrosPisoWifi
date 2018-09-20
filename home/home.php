@@ -25,7 +25,7 @@ $componentsList = components()->list();
 											<div class="item-image img-responsive" style="max-height:200px;background-image: url('../include/img/upload/<?=$row->image;?>');">
 											</div>
 											<?php }else { ?>
-											<div class="item-image img-responsive" style="max-height:200px;background-image: url('../include/img/upload/1.jpg');">
+											<div class="item-image img-responsive" style="max-height:200px;background-image: url('../include/img/no-image.png');">
 											</div>
 											<?php } ?>
 											<div class="item-brand">
@@ -84,7 +84,7 @@ $componentsList = components()->list();
 											<div class="item-image img-responsive" style="max-height:200px;background-image: url('../include/img/upload/<?=$row->image;?>');">
 											</div>
 											<?php }else { ?>
-											<div class="item-image img-responsive" style="max-height:200px;background-image: url('../include/img/upload/1.jpg');">
+											<div class="item-image img-responsive" style="max-height:200px;background-image: url('../include/img/no-image.png');">
 											</div>
 											<?php } ?>
 											<div class="item-brand">

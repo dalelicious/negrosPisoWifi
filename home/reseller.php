@@ -13,8 +13,13 @@ $resellersList = resellers()->list();
 						<?php foreach($resellersList as $row) { ?>
 							<div class="col-lg-4">
 								<div class="card">
-									<a class="itemview-img"  href="<?=$row->link;?>" target="_blank" style="max-height:300px;background-image: url('../include/img/upload/<?=$row->image;?>');">
-									</a>
+									<?php if ($row-image;) {?>
+										<a class="itemview-img"  href="<?=$row->link;?>" target="_blank" style="max-height:300px;background-image: url('../include/img/upload/<?=$row->image;?>');">
+										</a>
+									<?php }else{ ?>
+										<a class="itemview-img" style="max-height:300px;background-image: url('../include/img/no-image.png');">
+										</a>
+									<?php } ?>
 									<div class="card">
 											<a class="facebook" href="<?=$row->link;?>" target="_blank"> <?=$row->name;?> </a>
 										<li class="font-normal"> <?=$row->address;?></li>
