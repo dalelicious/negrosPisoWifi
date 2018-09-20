@@ -43,4 +43,11 @@ function resellers() {
 	return $crud;
 }
 
+// Messages Models
+function messages() {
+	$crud = new CRUD;
+	$crud->table = "messages";
+	return $crud;
+}
+
 ?>

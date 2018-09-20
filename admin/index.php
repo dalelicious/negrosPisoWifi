@@ -65,6 +65,12 @@ switch ($view) {
 		$content 	= 'addReseller.php';
 		$template	= '../include/template-admin.php';
 		break;
+	
+	case 'message' :
+		$currentSession = isset($_SESSION["admin_session"]);
+		$content 	= 'message.php';
+		$template	= '../include/template-admin.php';
+		break;
 			
 	default :
 		$currentSession = isset($_SESSION["admin_session"]);

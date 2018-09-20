@@ -93,6 +93,7 @@ $view = (isset($_GET['view']) && $_GET['view'] != '') ? $_GET['view'] : '';
                                         <li class="bordered-s no-gap"><a href='../admin/?view=faqList'>FAQ</a></li>
                                         <li class="bordered-s no-gap"><a href='../admin/?view=resellers'>Resellers</a></li>
                                         <li class="bordered-s no-gap"><a href='../admin/?view=userList'>Users</a></li>
+                                        <li class="bordered-s no-gap"><a href='../admin/?view=message'>Messages</a></li>
                                     </ul>
                                 </div>
                                 <!-- End of Sidenav -->

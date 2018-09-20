@@ -1,5 +1,5 @@
 ﻿# Host: localhost  (Version 5.5.5-10.1.30-MariaDB)
-# Date: 2018-09-21 01:20:11
+# Date: 2018-09-21 01:59:46
 # Generator: MySQL-Front 5.4  (Build 1.40)
 
 /*!40101 SET NAMES utf8 */;
@@ -16,7 +16,7 @@ CREATE TABLE `blog` (
   `image` varchar(255) DEFAULT NULL,
   `createDate` datetime DEFAULT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 #
 # Data for table "blog"
@@ -54,7 +54,7 @@ CREATE TABLE `faq` (
   `question` text,
   `answer` text,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 #
 # Data for table "faq"
@@ -75,13 +75,33 @@ CREATE TABLE `items` (
   `price` varchar(50) DEFAULT NULL,
   `image` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 #
 # Data for table "items"
 #
 
-INSERT INTO `items` VALUES (1,'Raspberry Pi Foundation','Raspberry Pi','Raspberry Pi is a tiny and affordable computer that you can use to learn programming through fun, practical projects.','2,767.00','raspberyPi.jpg'),(2,'Tenda','F3','F3 is specially designed for your smart home networking life .Chip to router what is heart to human.Its superior Advanced Chip ensures stable and fast wireless performance, making it ideal for streaming music, uploading photos, video chatting, HD video streaming and other bandwidth-intensive tasks.','976.00','tendaRouter.jpg');
+INSERT INTO `items` VALUES (1,'Raspberry Pi Foundation','Raspberry Pi','Raspberry Pi is a tiny and affordable computer that you can use to learn programming through fun, practical projects.','2,767.00','raspberyPi.jpg'),(2,'Tenda','F3','F3 is specially designed for your smart home networking life .Chip to router what is heart to human.Its superior Advanced Chip ensures stable and fast wireless performance, making it ideal for streaming music, uploading photos, video chatting, HD video streaming and other bandwidth-intensive tasks.','976.00','tendaRouter.jpg'),(3,'test','test','test','1','1537465641.ico'),(4,'try','try','try','2','1537465652.png');
+
+#
+# Structure for table "messages"
+#
+
+DROP TABLE IF EXISTS `messages`;
+CREATE TABLE `messages` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) DEFAULT NULL,
+  `shop_add` varchar(50) DEFAULT NULL,
+  `phone` varchar(50) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `message` text,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+#
+# Data for table "messages"
+#
+
 
 #
 # Structure for table "resellers"
@@ -117,7 +137,7 @@ CREATE TABLE `users` (
   `last_name` varchar(50) DEFAULT NULL,
   `password` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 #
 # Data for table "users"
