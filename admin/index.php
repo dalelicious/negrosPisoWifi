@@ -12,9 +12,27 @@ switch ($view) {
 		$template	= '../include/template-login.php';
 		break;
 	
+	case 'componentsList' :
+		$currentSession = isset($_SESSION["admin_session"]);
+		$content 	= 'componentsList.php';
+		$template	= '../include/template-admin.php';
+		break;
+	
 	case 'blogList' :
 		$currentSession = isset($_SESSION["admin_session"]);
 		$content 	= 'blogList.php';
+		$template	= '../include/template-admin.php';
+		break;
+	
+	case 'faqList' :
+		$currentSession = isset($_SESSION["admin_session"]);
+		$content 	= 'faqList.php';
+		$template	= '../include/template-admin.php';
+		break;
+	
+	case 'resellers' :
+		$currentSession = isset($_SESSION["admin_session"]);
+		$content 	= 'resellers.php';
 		$template	= '../include/template-admin.php';
 		break;
 	
@@ -33,6 +51,18 @@ switch ($view) {
 	case 'addItem' :
 		$currentSession = isset($_SESSION["admin_session"]);
 		$content 	= 'addItem.php';
+		$template	= '../include/template-admin.php';
+		break;
+	
+	case 'addComponents' :
+		$currentSession = isset($_SESSION["admin_session"]);
+		$content 	= 'addComponents.php';
+		$template	= '../include/template-admin.php';
+		break;
+	
+	case 'addReseller' :
+		$currentSession = isset($_SESSION["admin_session"]);
+		$content 	= 'addReseller.php';
 		$template	= '../include/template-admin.php';
 		break;
 			

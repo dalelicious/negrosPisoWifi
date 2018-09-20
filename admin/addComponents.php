@@ -1,16 +1,10 @@
 <div class="container-fluid">
-	<h4 style="margin-bottom: 30px;font-weight: 500;color: #444;" class="roboto">Add New Product</h4>
+	<h4 style="margin-bottom: 30px;font-weight: 500;color: #444;" class="roboto">Add New Parts</h4>
 	<div class="row">
 		<div class="col-md-12">
-			<form action="process.php?action=addItem" name="add-item-form" class="form-horizontal" method="POST" enctype="multipart/form-data">
+			<form action="process.php?action=addComponents" name="add-item-form" class="form-horizontal" method="POST" enctype="multipart/form-data">
 				<div id="add-name-group" class="form-group">
-					<label class="col-md-3 control-label">Product Brand</label>
-					<div class="col-md-6">
-						<input type="text" class="form-control" name="itemBrand" autocomplete="off" value="" autofocus required>
-					</div>
-				</div>
-				<div id="add-name-group" class="form-group">
-					<label class="col-md-3 control-label">Product Name</label>
+					<label class="col-md-3 control-label">Parts Name</label>
 					<div class="col-md-6">
 						<input type="text" class="form-control" name="itemName" autocomplete="off" value="" autofocus required>
 					</div>
@@ -23,7 +17,7 @@
 				</div>
 
 				<div id="item-img-group" class="form-group">
-					<label class="col-md-3 control-label">Product Picture</label>
+					<label class="col-md-3 control-label">Parts Picture</label>
 					<div class="col-md-6">
 						<div class="" style="margin-top: 8px;">
 							<input type="file" class="" name="upload_file"/>

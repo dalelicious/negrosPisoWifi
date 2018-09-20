@@ -88,8 +88,10 @@ $view = (isset($_GET['view']) && $_GET['view'] != '') ? $_GET['view'] : '';
                                     <span style="padding-top:14px;padding-bottom:4px;display:block;" class="thick">Control Panel</span>
                                     <ul class="nav nav-stacked" style="background-color:#ffffff; ">
                                         <li class="bordered-s no-gap"><a href='../admin/'>Product Designs</a></li>
+                                        <li class="bordered-s no-gap"><a href='../admin/?view=componentsList'>Basic Parts</a></li>
                                         <li class="bordered-s no-gap"><a href='../admin/?view=blogList'>Blog<span id="order-badge-counter" class="badge pull-right"></span></a></li>
-                                        <li class="bordered-s no-gap"><a href='#'>FAQ</a></li>
+                                        <li class="bordered-s no-gap"><a href='../admin/?view=faqList'>FAQ</a></li>
+                                        <li class="bordered-s no-gap"><a href='../admin/?view=resellers'>Resellers</a></li>
                                         <li class="bordered-s no-gap"><a href='../admin/?view=userList'>Users</a></li>
                                     </ul>
                                 </div>

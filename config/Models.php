@@ -15,10 +15,31 @@ function items() {
 	return $crud;
 }
 
+// Components Models
+function components() {
+	$crud = new CRUD;
+	$crud->table = "components";
+	return $crud;
+}
+
 // Blog Models
 function blog() {
 	$crud = new CRUD;
 	$crud->table = "blog";
+	return $crud;
+}
+
+// FAQ Models
+function faq() {
+	$crud = new CRUD;
+	$crud->table = "faq";
+	return $crud;
+}
+
+// Resellers Models
+function resellers() {
+	$crud = new CRUD;
+	$crud->table = "resellers";
 	return $crud;
 }
 
