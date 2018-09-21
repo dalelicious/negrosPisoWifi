@@ -9,18 +9,33 @@ function users() {
 }
 
 // Items Models
-function items() {
+function product() {
 	$crud = new CRUD;
-	$crud->table = "items";
+	$crud->table = "product";
 	return $crud;
 }
 
 // Components Models
-function components() {
+function part() {
 	$crud = new CRUD;
-	$crud->table = "components";
+	$crud->table = "part";
 	return $crud;
 }
+
+// Components Models
+function video() {
+	$crud = new CRUD;
+	$crud->table = "video";
+	return $crud;
+}
+
+// Resellers Models
+function reseller() {
+	$crud = new CRUD;
+	$crud->table = "reseller";
+	return $crud;
+}
+
 
 // Blog Models
 function blog() {
@@ -33,13 +48,6 @@ function blog() {
 function faq() {
 	$crud = new CRUD;
 	$crud->table = "faq";
-	return $crud;
-}
-
-// Resellers Models
-function resellers() {
-	$crud = new CRUD;
-	$crud->table = "resellers";
 	return $crud;
 }
 
