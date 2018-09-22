@@ -7,11 +7,11 @@
                 <div
                     class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?=$ROOT;?>pages/our-resellers">OUR RESELLERS</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?=$ROOT;?>pages/our-resellers.php">OUR RESELLERS</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="https://www.facebook.com/groups/294521197818788/" target="_blank">COMMUNITY</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?=$ROOT;?>pages/blog">BLOG</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?=$ROOT;?>pages/faq">FAQ</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?=$ROOT;?>pages/contact-us">CONTACT US</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?=$ROOT;?>pages/blog.php">BLOG</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?=$ROOT;?>pages/faq.php">FAQ</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?=$ROOT;?>pages/contact-us.php">CONTACT US</a></li>
                     </ul>
             </div>
     </div>

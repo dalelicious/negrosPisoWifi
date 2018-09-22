@@ -8,7 +8,7 @@
 
     <div class="col-md-6 text-right">
         <div>
-          <button class="btn btn-primary round-button" onclick="location.href='./admin?view=user-add'">Add New User </button>
+          <button class="btn btn-primary round-button" onclick="location.href='./admin.php?view=user-add'">Add New User </button>
         </div>
     </div>
 </div>
@@ -38,7 +38,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                 </div>
                 <div class="modal-body text-center">
-                    <button class="btn btn-primary btn-lg" onclick="location.href='<?=$ROOT;?>admin?view=user-update&Id=<?=$key->Id;?>'">Update</button>
+                    <button class="btn btn-primary btn-lg" onclick="location.href='<?=$ROOT;?>admin.php?view=user-update&Id=<?=$key->Id;?>'">Update</button>
                     <button class="btn btn-danger btn-lg" onclick="location.href='<?=$ROOT;?>user/process.php?action=delete&Id=<?=$key->Id;?>'">Delete</button>
                 </div>
               </div>

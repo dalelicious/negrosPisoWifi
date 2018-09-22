@@ -28,7 +28,7 @@ function add()
 		$model->obj['link'] = $_POST['link'];
 		$model->create();
 
-		header('Location: ../admin?view=videos&success=You have successfully added a video tutorial');
+		header('Location: ../admin.php?view=videos&success=You have successfully added a video tutorial');
 
 }
 
@@ -41,7 +41,7 @@ function update()
 		$model->obj['link'] = $_POST['link'];
 		$model->update("Id=$Id");
 
-		header('Location: ../admin?view=videos&success=You have successfully updated a video tutorial');
+		header('Location: ../admin.php?view=videos&success=You have successfully updated a video tutorial');
 
 
 }
@@ -53,7 +53,7 @@ function delete()
 
 	video()->delete("Id=$Id");
 
-	header('Location: ../admin?view=videos&success=You have successfully deleted a video tutorial');
+	header('Location: ../admin.php?view=videos&success=You have successfully deleted a video tutorial');
 
 }
 

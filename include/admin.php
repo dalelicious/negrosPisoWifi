@@ -1,7 +1,7 @@
 <?php
   if(!$_SESSION['admin_session'])
     {
-        header('Location: ./admin?view=login');
+        header('Location: ./admin.php?view=login');
         exit;
     }
 
@@ -15,13 +15,13 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand"> <img src="<?=$ROOT?>include/assets/img/logo.png"></li>
                 <li> <a href="./admin">Product Designs</a></li>
-                <li> <a href="./admin?view=basic-parts">Basic Parts</a></li>
-                <li> <a href="./admin?view=videos">Youtube Videos</a></li>
-                <li> <a href="./admin?view=blogs">Blog</a></li>
-                <li> <a href="./admin?view=faqs">FAQ</a></li>
-                <li> <a href="./admin?view=resellers">Resellers</a></li>
-                <li> <a href="./admin?view=users">Users</a></li>
-                <li> <a href="./admin?view=messages">Messages</a></li>
+                <li> <a href="./admin.php?view=basic-parts">Basic Parts</a></li>
+                <li> <a href="./admin.php?view=videos">Youtube Videos</a></li>
+                <li> <a href="./admin.php?view=blogs">Blog</a></li>
+                <li> <a href="./admin.php?view=faqs">FAQ</a></li>
+                <li> <a href="./admin.php?view=resellers">Resellers</a></li>
+                <li> <a href="./admin.php?view=users">Users</a></li>
+                <li> <a href="./admin.php?view=messages">Messages</a></li>
                 <li> <a href="./user/process.php?action=logout">Logout</a></li>
             </ul>
         </div>

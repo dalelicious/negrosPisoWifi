@@ -39,9 +39,9 @@ function login() {
 	if ($result != 0 ){
 		session_start();
 		$_SESSION['admin_session'] = $username;
-		header('Location: ../admin');
+		header('Location: ../admin.php');
 	}else{
-		header('Location: ../admin?view=login&error=Authentication Error');
+		header('Location: ../admin.php?view=login&error=Authentication Error');
 	}
 
 }
@@ -50,7 +50,7 @@ function logout()
 {
 	session_start();
 	session_destroy();
-	header('Location: ../admin');
+	header('Location: ../admin.php');
 	exit;
 }
 
@@ -61,7 +61,7 @@ function add()
 		$model->obj['password'] = $_POST['password'];
 		$model->create();
 
-		header('Location: ../admin?view=users&success=You have successfully added a user');
+		header('Location: ../admin.php?view=users&success=You have successfully added a user');
 
 }
 
@@ -73,7 +73,7 @@ function update()
 		$model->obj['password'] = $_POST['password'];
 		$model->update("Id=$Id");
 
-		header('Location: ../admin?view=users&success=You have successfully updated a user');
+		header('Location: ../admin.php?view=users&success=You have successfully updated a user');
 
 }
 
@@ -84,7 +84,7 @@ function delete()
 
 	user()->delete("Id=$Id");
 
-	header('Location: ../admin?view=users&success=You have successfully deleted a user');
+	header('Location: ../admin.php?view=users&success=You have successfully deleted a user');
 
 }
 

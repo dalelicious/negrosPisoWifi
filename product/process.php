@@ -34,10 +34,10 @@ function add()
 		$model->obj['image'] = $upload;
 		$model->create();
 
-		header('Location: ../admin?success=You have successfully added a product');
+		header('Location: ../admin.php?success=You have successfully added a product');
 	}
 	else{
-		header('Location: ../admin?view=product-add&error=Not uploaded.');
+		header('Location: ../admin.php?view=product-add&error=Not uploaded.');
 	}
 }
 
@@ -52,7 +52,7 @@ function update()
 		$model->obj['price'] = $_POST['itemPrice'];
 		$model->update("Id=$Id");
 
-		header('Location: ../admin?success=You have successfully updated a product');
+		header('Location: ../admin.php?success=You have successfully updated a product');
 
 
 }
@@ -64,7 +64,7 @@ function delete()
 
 	product()->delete("Id=$Id");
 
-	header('Location: ../admin?success=You have successfully deleted a product');
+	header('Location: ../admin.php?success=You have successfully deleted a product');
 
 }
 

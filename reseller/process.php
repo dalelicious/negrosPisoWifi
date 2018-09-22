@@ -35,10 +35,10 @@ function add()
 		$model->obj['image'] = $upload;
 		$model->create();
 
-		header('Location: ../admin?view=resellers&success=You have successfully added a reseller');
+		header('Location: ../admin.php?view=resellers&success=You have successfully added a reseller');
 	}
 	else{
-		header('Location: ../admin?view=reseller-add&error=Not uploaded.');
+		header('Location: ../admin.php?view=reseller-add&error=Not uploaded.');
 	}
 }
 
@@ -54,7 +54,7 @@ function update()
 		$model->obj['link'] = $_POST['link'];
 		$model->update("Id=$Id");
 
-		header('Location: ../admin?view=resellers&success=You have successfully updated a product');
+		header('Location: ../admin.php?view=resellers&success=You have successfully updated a product');
 
 
 }
@@ -66,7 +66,7 @@ function delete()
 
 	reseller()->delete("Id=$Id");
 
-	header('Location: ../admin?view=resellers&success=You have successfully deleted a product');
+	header('Location: ../admin.php?view=resellers&success=You have successfully deleted a product');
 
 }
 
