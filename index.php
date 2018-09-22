@@ -7,8 +7,8 @@
         <h1>Start Small. Earn Big.</h1>
         <h1>Start your business now!</h1>
         <p>Strictly for Negros Occidental</p>
-        <p><a class="btn btn-primary round-button" role="button" href="#">Buy now</a><button class="btn btn-primary round-button" type="button">Be our reseller</button></p>
-        <p>For inquiries ourside Negros Occidental...</p><button class="btn btn-primary round-button" type="button">Ado Distributors</button></div>
+        <p><a class="btn btn-primary round-button" role="button" href="./pages/our-resellers.php">Buy now</a><button onclick="location.href='./pages/contact-us.php'" class="btn btn-primary round-button" type="button">Be our reseller</button></p>
+        <p>For inquiries ourside Negros Occidental...</p><button onclick="location.href='./pages/our-resellers.php'" class="btn btn-primary round-button" type="button">Ado Distributors</button></div>
 
 
 
@@ -25,7 +25,7 @@
                 <h5> These are our top products </h5>
               </div>
               <div class="col-md-6 text-right">
-                <h5> <a href="./pages/products">View mode > </a></h5>
+                <h5> <a href="./pages/products.php" style="text-decoration:none;">View more > </a></h5>
               </div>
             </div>
 
@@ -68,13 +68,13 @@
                 <h5> Avail our basic parts </h5>
               </div>
               <div class="col-md-6 text-right">
-                <h5> <a href="">View mode > </a></h5>
+                <h5> <a href="./pages/basic-parts.php" style="text-decoration:none;">View more > </a> </a></h5>
               </div>
             </div>
 
             <div class="row">
 
-              <?php foreach (part()->list() as $key) {?>
+              <?php foreach (part()->list("Id>0 LIMIT 3") as $key) {?>
                 <div class="col-sm-6 col-md-4">
                     <div class="box" style="min-height:350px;">
                         <div class="box-img"><img src="<?=$ROOT?>media/<?=$key->image;?>" alt="Williamson"></div>
