@@ -1,26 +1,42 @@
 <?php
 include "CRUD.php";
+include "functions.php";
 
 // User Models
-function users() {
+function user() {
 	$crud = new CRUD;
-	$crud->table = "users";
+	$crud->table = "user";
 	return $crud;
 }
 
 // Items Models
-function items() {
+function product() {
 	$crud = new CRUD;
-	$crud->table = "items";
+	$crud->table = "product";
 	return $crud;
 }
 
 // Components Models
-function components() {
+function part() {
 	$crud = new CRUD;
-	$crud->table = "components";
+	$crud->table = "part";
 	return $crud;
 }
+
+// Components Models
+function video() {
+	$crud = new CRUD;
+	$crud->table = "video";
+	return $crud;
+}
+
+// Resellers Models
+function reseller() {
+	$crud = new CRUD;
+	$crud->table = "reseller";
+	return $crud;
+}
+
 
 // Blog Models
 function blog() {
@@ -36,17 +52,10 @@ function faq() {
 	return $crud;
 }
 
-// Resellers Models
-function resellers() {
-	$crud = new CRUD;
-	$crud->table = "resellers";
-	return $crud;
-}
-
 // Messages Models
-function messages() {
+function message() {
 	$crud = new CRUD;
-	$crud->table = "messages";
+	$crud->table = "message";
 	return $crud;
 }
 
