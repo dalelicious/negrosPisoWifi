@@ -14,7 +14,7 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand"> <img src="<?=$ROOT?>include/assets/img/logo.png"></li>
-                <li> <a href="./admin">Product Designs</a></li>
+                <li> <a href="./admin.php">Product Designs</a></li>
                 <li> <a href="./admin.php?view=basic-parts">Basic Parts</a></li>
                 <li> <a href="./admin.php?view=videos">Youtube Videos</a></li>
                 <li> <a href="./admin.php?view=blogs">Blog</a></li>
