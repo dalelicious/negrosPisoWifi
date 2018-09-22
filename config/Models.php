@@ -1,10 +1,11 @@
 <?php
 include "CRUD.php";
+include "functions.php";
 
 // User Models
-function users() {
+function user() {
 	$crud = new CRUD;
-	$crud->table = "users";
+	$crud->table = "user";
 	return $crud;
 }
 
@@ -52,9 +53,9 @@ function faq() {
 }
 
 // Messages Models
-function messages() {
+function message() {
 	$crud = new CRUD;
-	$crud->table = "messages";
+	$crud->table = "message";
 	return $crud;
 }
 

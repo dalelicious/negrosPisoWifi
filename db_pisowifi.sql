@@ -1,5 +1,5 @@
 ﻿# Host: localhost  (Version 5.5.5-10.1.34-MariaDB)
-# Date: 2018-09-21 05:37:46
+# Date: 2018-09-22 10:48:01
 # Generator: MySQL-Front 6.0  (Build 2.20)
 
 
@@ -21,7 +21,6 @@ CREATE TABLE `blog` (
 # Data for table "blog"
 #
 
-INSERT INTO `blog` VALUES (1,'Coinslot Relay Setup','Sometimes, users forget to press the insert coin button before they drop coins into the coinslot. This will result in NOT CREDITED logs in your sales inventory. This guide will teach you how to setup a relay to the coinslot.','coinslot.jpg','2018-09-03 13:23:40'),(2,'Extending WiFi Signal Using Tenda N301 Router','Tenda N301 is a low-cost router that you can use as an external access point for your wifi hotspot system.\t','tenda_n301.jpg','2018-09-03 13:23:40');
 
 #
 # Structure for table "faq"
@@ -39,14 +38,13 @@ CREATE TABLE `faq` (
 # Data for table "faq"
 #
 
-INSERT INTO `faq` VALUES (1,'Ano ang Piso Wifi Vending Machine \0','This is hotspot wherein ang ISP mo is sinishare mo sa iba.\0'),(2,' Need pa ba namin ng internet? \0',' Yes you can use your own internet or you may apply PLDT SKYBroadband or any internet with unlimted data and no capping (20mbps and up)\0'),(3,'May monthly po bang babayaran? \0','Wala na po. One time fee only sa vendo machine\0'),(4,' Ilan mins ang piso? \0','Pwde mo edit ang minutes na gusto mo sample P1=6min, 5=30mins, P10=50mins');
 
 #
-# Structure for table "messages"
+# Structure for table "message"
 #
 
-DROP TABLE IF EXISTS `messages`;
-CREATE TABLE `messages` (
+DROP TABLE IF EXISTS `message`;
+CREATE TABLE `message` (
   `Id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) DEFAULT NULL,
   `shop_add` varchar(50) DEFAULT NULL,
@@ -54,10 +52,10 @@ CREATE TABLE `messages` (
   `email` varchar(50) DEFAULT NULL,
   `message` text,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 #
-# Data for table "messages"
+# Data for table "message"
 #
 
 
@@ -79,7 +77,6 @@ CREATE TABLE `part` (
 # Data for table "part"
 #
 
-INSERT INTO `part` VALUES (1,'Raspberry Pi','Raspberry Pi is a tiny and affordable computer that you can use to learn programming through fun, practical projects.\n','2,767.00','raspberyPi.jpg'),(2,'Tenda','F3 is specially designed for your smart home networking life .Chip to router what is heart to human.Its superior Advanced Chip ensures stable and fast wireless performance, making it ideal for streaming music, uploading photos, video chatting, HD video streaming and other bandwidth-intensive tasks.\n','976.00','tendaRouter.jpg');
 
 #
 # Structure for table "product"
@@ -100,7 +97,6 @@ CREATE TABLE `product` (
 # Data for table "product"
 #
 
-INSERT INTO `product` VALUES (1,'Raspberry Pi Foundation','Raspberry Pi','Raspberry Pi is a tiny and affordable computer that you can use to learn programming through fun, practical projects.','2,767.00','raspberyPi.jpg'),(2,'Tenda','F3','F3 is specially designed for your smart home networking life .Chip to router what is heart to human.Its superior Advanced Chip ensures stable and fast wireless performance, making it ideal for streaming music, uploading photos, video chatting, HD video streaming and other bandwidth-intensive tasks.','976.00','tendaRouter.jpg'),(3,'test','test','test','1','1537465641.ico'),(4,'try','try','try','2','1537465652.png');
 
 #
 # Structure for table "reseller"
@@ -122,27 +118,24 @@ CREATE TABLE `reseller` (
 # Data for table "reseller"
 #
 
-INSERT INTO `reseller` VALUES (1,'Mtech Piso Computer Services','San Juan, San Sebastian Street Dawis, Bacolod City','09985944429','Sir Jojo Jomon','https://www.facebook.com/mtechpisonetcomputer/','mtech.jpg'),(2,'Altech.com','Fuentebella Taculing, Bacolod City','093972234933','Arvel Ribo','','1537463292.jpg');
 
 #
-# Structure for table "users"
+# Structure for table "user"
 #
 
-DROP TABLE IF EXISTS `users`;
-CREATE TABLE `users` (
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user` (
   `Id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(50) DEFAULT NULL,
-  `first_name` varchar(50) DEFAULT NULL,
-  `last_name` varchar(50) DEFAULT NULL,
   `password` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`Id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 #
-# Data for table "users"
+# Data for table "user"
 #
 
-INSERT INTO `users` VALUES (1,'admin','admin','admin','ProjectUrbanite01');
+INSERT INTO `user` VALUES (1,'admin','admin');
 
 #
 # Structure for table "video"
@@ -160,4 +153,3 @@ CREATE TABLE `video` (
 # Data for table "video"
 #
 
-INSERT INTO `video` VALUES (1,'How do customers connect?','https://www.youtube.com/embed/tI_z7vSe5U8');

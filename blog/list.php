@@ -2,13 +2,13 @@
 
     <div class="col-md-6">
         <div>
-            <h3>My Products</h3>
+            <h3>Blogs</h3>
         </div>
     </div>
 
     <div class="col-md-6 text-right">
         <div>
-          <button class="btn btn-primary round-button" onclick="location.href='./admin?view=product-add'">Add New Product </button>
+          <button class="btn btn-primary round-button" onclick="location.href='./admin?view=blog-add'">Add New Story </button>
         </div>
     </div>
 </div>
@@ -17,7 +17,7 @@
 
 
 
-    <?php foreach (product()->list() as $key) {?>
+    <?php foreach (blog()->list() as $key) {?>
 
       <div class="col-md-12">
         <a class="card product-card align-content-center" role="button" href="#myModal<?=$key->Id;?>" data-toggle="modal">
@@ -29,9 +29,9 @@
               </div>
 
               <div class="col-md-10">
-                <h6><?=$key->brand;?></h6>
-                <h5><?=$key->name;?></h5>
-                <p><?=$key->description;?><br></p>
+                <h5><?=$key->title;?></h5>
+                <h6><?=$key->createDate;?></h6>
+                <p><?=$key->content;?><br></p>
               </div>
             </div>
           </div>
@@ -44,12 +44,12 @@
           <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                    <h4><?=$key->name;?></h4>
+                    <h4><?=$key->title;?></h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                 </div>
                 <div class="modal-body text-center">
-                    <button class="btn btn-primary btn-lg" onclick="location.href='<?=$ROOT;?>admin?view=product-update&Id=<?=$key->Id;?>'">Update</button>
-                    <button class="btn btn-danger btn-lg" onclick="location.href='<?=$ROOT;?>product/process.php?action=delete&Id=<?=$key->Id;?>'">Delete</button>
+                    <button class="btn btn-primary btn-lg" onclick="location.href='<?=$ROOT;?>admin?view=blog-update&Id=<?=$key->Id;?>'">Update</button>
+                    <button class="btn btn-danger btn-lg" onclick="location.href='<?=$ROOT;?>blog/process.php?action=delete&Id=<?=$key->Id;?>'">Delete</button>
                 </div>
               </div>
           </div>

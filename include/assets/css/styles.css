@@ -227,12 +227,19 @@
 .card.product-card:hover {
   background:#efeeee;
   cursor:pointer;
+  text-decoration: none;
 }
 
 .row.product-grid {
   margin-top:50px;
   margin-bottom:50px;
 }
+
+.modal-option {
+  background: red;
+  padding: 30px;
+}
+
 
 .col-centered {
     display:inline-block;
@@ -275,8 +282,16 @@
   text-shadow:1px 1px #ffffff;
 }
 
+.parts-div p {
+  min-height: 120px;
+}
+
 .card.product-card {
   margin-bottom:10px;
+}
+
+.card.product-card p{
+  min-height: 120px;
 }
 
 #videos-section {
@@ -297,4 +312,25 @@
   text-align:center;
   padding:20px;
   margin-top: 100px;
+}
+
+
+.blog-detail img{
+  margin: 30px;
+  width: 90%;
+  text-align: center;
+}
+
+.blog-detail h1,.blog-detail h6,.blog-detail p {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.archive-list h2,.archive-list .table{
+    margin: 30px;
+    width: 80%;
+}
+.archive-list a{
+  text-decoration: none;
+  color: inherit;
 }

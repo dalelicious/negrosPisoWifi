@@ -1,4 +1,10 @@
 <?php
+  if(!$_SESSION['admin_session'])
+    {
+        header('Location: ./admin?view=login');
+        exit;
+    }
+
   $ROOT = "";
   include $ROOT."include/_zero.php";
  ?>
@@ -10,13 +16,13 @@
                 <li class="sidebar-brand"> <img src="<?=$ROOT?>include/assets/img/logo.png"></li>
                 <li> <a href="./admin">Product Designs</a></li>
                 <li> <a href="./admin?view=basic-parts">Basic Parts</a></li>
-                <li> <a href="./admin?view=blog">Youtube Videos</a></li>
-                <li> <a href="./admin?view=blog">Blog</a></li>
-                <li> <a href="./admin?view=blog">FAQ</a></li>
-                <li> <a href="./admin?view=blog">Resellers</a></li>
-                <li> <a href="./admin?view=blog">Users</a></li>
-                <li> <a href="./admin?view=blog">Messages</a></li>
-                <li> <a href="./admin?view=blog">Logout</a></li>
+                <li> <a href="./admin?view=videos">Youtube Videos</a></li>
+                <li> <a href="./admin?view=blogs">Blog</a></li>
+                <li> <a href="./admin?view=faqs">FAQ</a></li>
+                <li> <a href="./admin?view=resellers">Resellers</a></li>
+                <li> <a href="./admin?view=users">Users</a></li>
+                <li> <a href="./admin?view=messages">Messages</a></li>
+                <li> <a href="./user/process.php?action=logout">Logout</a></li>
             </ul>
         </div>
         <div class="page-content-wrapper">

@@ -13,25 +13,32 @@
 
 
     <section id="product-section">
-        <div class="container">
-            <div class="row text-center">
+        <div class="container product-grid">
+            <div class="row text-center" style="margin-top:50px;">
                 <div class="col">
                     <h1>Our Product Designs</h1>
                 </div>
             </div>
 
+            <div class="row">
+              <div class="col-md-6">
+                <h5> These are our top products </h5>
+              </div>
+              <div class="col-md-6 text-right">
+                <h5> <a href="./pages/products">View mode > </a></h5>
+              </div>
+            </div>
 
+            <div class="row">
 
-            <div class="row product-grid">
-
-              <?php foreach (product()->list() as $key) {?>
+              <?php foreach (product()->list("Id>0 LIMIT 3") as $key) {?>
 
                 <div class="col-md-4">
                     <div class="card product-card align-content-center">
                         <div class="card-body"><img class="rounded img-fluid product-image text-center" src="<?=$ROOT;?>media/<?=$key->image;?>">
                             <h6><?=$key->brand;?></h6>
                             <h5><?=$key->name;?></h5>
-                            <p><?=$key->description;?><br></p>
+                            <p><?=truncate($key->description,200);?><br></p>
                             <div class="price-border">
                                 <h4><?=$key->price;?></h4>
                             </div>
@@ -50,20 +57,38 @@
 
     <section id="basic-part-section">
         <div class="container">
-            <div class="row text-center">
+            <div class="row text-center" style="margin-top:50px;">
                 <div class="col">
                     <h1>Basic Parts</h1>
                 </div>
             </div>
-            <div class="row product-grid">
 
-              <?php foreach (part()->list() as $key) { ?>
-                <div class="col-md-4"><img class="rounded img-fluid bp-image" src="<?=$ROOT;?>media/<?=$key->image;?>">
-                    <div class="parts-div">
-                        <h5><?=$key->name;?></h5>
-                        <p><?=$key->description;?><br></p>
-                        <h4><?=$key->price;?></h4><button class="btn btn-primary round-button" type="button">Buy Now</button></div>
+            <div class="row">
+              <div class="col-md-6">
+                <h5> Avail our basic parts </h5>
+              </div>
+              <div class="col-md-6 text-right">
+                <h5> <a href="">View mode > </a></h5>
+              </div>
+            </div>
+
+            <div class="row">
+
+              <?php foreach (part()->list() as $key) {?>
+                <div class="col-sm-6 col-md-4">
+                    <div class="box" style="min-height:350px;">
+                        <div class="box-img"><img src="<?=$ROOT?>media/<?=$key->image;?>" alt="Williamson"></div>
+                        <div class="box-content">
+                            <h4 class="title"><?=$key->name;?></h4>
+                            <p class="description">
+                              <?=truncate($key->description,200);?>
+                            </p>
+
+                            <h4><?=$key->price;?></h4><button class="btn btn-primary round-button" type="button">Buy Now</button>
+                        </div>
+                    </div>
                 </div>
+
               <?php } ?>
 
             </div>

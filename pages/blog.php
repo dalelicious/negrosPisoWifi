@@ -13,21 +13,34 @@
 </section>
 
     <section>
-      <div class="container">
-          <div class="row product-grid">
-            <?php foreach (blog()->list() as $key) {?>
-              <div class="col-sm-6 col-md-4">
-                  <div class="box" style="min-height:350px;">
-                      <div class="box-img"><img src="<?=$ROOT?>media/<?=$key->image;?>" alt="Williamson"></div>
-                      <div class="box-content">
-                          <h4 class="title"><?=$key->title;?></h4>
-                          <p class="description"><?=$key->content;?></p>
-                          <p class="description"><?=$key->createDate;?></p>
-                      </div>
-                  </div>
-              </div>
+      <div class="container-fluid">
 
-            <?php } ?>
+
+          <div class="row product-grid">
+
+            <div class="col-md-8 blog-detail">
+                <img src="<?=$ROOT;?>media/1.jpg">
+                <h1>This is the title </h1>
+                <h6> this is the date </h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+
+
+            <div class="col-md-4 archive-list">
+              <h2>Archives</h2>
+              <table class="table">
+                <tr>
+                  <td><a href="">this is a titme (date here)</a>
+                  </td>
+                </tr>
+                  <tr>
+                    <td><a href="">this is a titme (date here)</a>
+                    </td>
+                  </tr>
+                </table>
+            </div>
+
 
 
           </div>

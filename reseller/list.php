@@ -2,13 +2,13 @@
 
     <div class="col-md-6">
         <div>
-            <h3>My Products</h3>
+            <h3>Resellers</h3>
         </div>
     </div>
 
     <div class="col-md-6 text-right">
         <div>
-          <button class="btn btn-primary round-button" onclick="location.href='./admin?view=product-add'">Add New Product </button>
+          <button class="btn btn-primary round-button" onclick="location.href='./admin?view=reseller-add'">Add New Reseller </button>
         </div>
     </div>
 </div>
@@ -17,10 +17,10 @@
 
 
 
-    <?php foreach (product()->list() as $key) {?>
+    <?php foreach (reseller()->list() as $key) {?>
 
-      <div class="col-md-12">
-        <a class="card product-card align-content-center" role="button" href="#myModal<?=$key->Id;?>" data-toggle="modal">
+      <div class="col-md-12" style="margin-bottom:5px;">
+        <a class="card align-content-center" style="margin-bottom:5px;text-decoration:none;" role="button" href="#myModal<?=$key->Id;?>" data-toggle="modal">
           <div class="card-body">
 
             <div class="row">
@@ -29,9 +29,11 @@
               </div>
 
               <div class="col-md-10">
-                <h6><?=$key->brand;?></h6>
-                <h5><?=$key->name;?></h5>
-                <p><?=$key->description;?><br></p>
+                  <h5><?=$key->name;?></h5>
+                  <p><?=$key->address;?><br></p>
+                  <h6><?=$key->contact_person;?></h6>
+                  <h6><?=$key->phone;?></h6>
+                  <h6>Page/website:<br> <?=$key->link;?></h6>
               </div>
             </div>
           </div>
@@ -48,8 +50,8 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                 </div>
                 <div class="modal-body text-center">
-                    <button class="btn btn-primary btn-lg" onclick="location.href='<?=$ROOT;?>admin?view=product-update&Id=<?=$key->Id;?>'">Update</button>
-                    <button class="btn btn-danger btn-lg" onclick="location.href='<?=$ROOT;?>product/process.php?action=delete&Id=<?=$key->Id;?>'">Delete</button>
+                    <button class="btn btn-primary btn-lg" onclick="location.href='<?=$ROOT;?>admin?view=reseller-update&Id=<?=$key->Id;?>'">Update</button>
+                    <button class="btn btn-danger btn-lg" onclick="location.href='<?=$ROOT;?>reseller/process.php?action=delete&Id=<?=$key->Id;?>'">Delete</button>
                 </div>
               </div>
           </div>

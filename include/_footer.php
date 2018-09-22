@@ -9,7 +9,7 @@
             <li class="list-inline-item"><a href="#">Terms</a></li>
             <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
         </ul>
-        <p class="copyright">Negros Piso Wifi © 2018</p>
+        <p class="copyright">Negros Piso Wifi © 2018 | <a href="https://juanbyte.com" target="_blank">Juanbyte Digital Solutions</a></p>
     </footer>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
