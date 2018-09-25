@@ -24,8 +24,8 @@ switch ($action) {
 function add()
 {
 		$model = faq();
-		$model->obj['question'] = $_POST['question'];
-		$model->obj['answer'] = $_POST['answer'];
+		$model->obj['question'] = htmlspecialchars($_POST['question'], ENT_QUOTES);
+		$model->obj['answer'] = htmlspecialchars($_POST['answer'], ENT_QUOTES);
 		$model->create();
 
 		header('Location: ../admin.php?view=faqs&success=You have successfully added a video tutorial');
@@ -37,8 +37,8 @@ function update()
 {
 		$Id = $_GET['Id'];
 		$model = faq();
-		$model->obj['question'] = $_POST['question'];
-		$model->obj['answer'] = $_POST['answer'];
+		$model->obj['question'] = htmlspecialchars($_POST['question'], ENT_QUOTES);
+		$model->obj['answer'] = htmlspecialchars($_POST['answer'], ENT_QUOTES);
 		$model->update("Id=$Id");
 
 		header('Location: ../admin.php?view=faqs&success=You have successfully updated a video tutorial');

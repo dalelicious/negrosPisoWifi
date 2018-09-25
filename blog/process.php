@@ -27,8 +27,8 @@ function add()
 	if ($upload)
 	{
 		$model = blog();
-		$model->obj['title'] = $_POST['title'];
-		$model->obj['content'] = $_POST['content'];
+		$model->obj['title'] = htmlspecialchars($_POST['title'], ENT_QUOTES);
+		$model->obj['content'] = htmlspecialchars($_POST['content'], ENT_QUOTES);
 		$model->obj['createDate'] = "NOW()";
 		$model->obj['image'] = $upload;
 		$model->create();
@@ -45,8 +45,8 @@ function update()
 {
 		$Id = $_GET['Id'];
 		$model = blog();
-		$model->obj['title'] = $_POST['title'];
-		$model->obj['content'] = $_POST['content'];
+		$model->obj['title'] = htmlspecialchars($_POST['title'], ENT_QUOTES);
+		$model->obj['content'] = htmlspecialchars($_POST['content'], ENT_QUOTES);
 		$model->obj['createDate'] = "NOW()";
 		$model->update("Id=$Id");
 

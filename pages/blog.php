@@ -27,13 +27,15 @@ $Id = (isset($_GET['Id']) && $_GET['Id'] != '') ? $_GET['Id'] : '';
 
           <div class="row product-grid">
 
-            <div class="col-md-8 blog-detail">
-                <img src="<?=$ROOT;?>media/<?=$obj->image;?>">
-                <h1><?=$obj->title;?></h1>
-                <h6><?=$obj->createDate;?></h6>
-                <p><?=$obj->content;?>
-                </p>
-            </div>
+            <?php if ($obj) { ?>
+              <div class="col-md-8 blog-detail">
+                  <img src="<?=$ROOT;?>media/<?=$obj->image;?>">
+                  <h1><?=$obj->title;?></h1>
+                  <h6><?=$obj->createDate;?></h6>
+                  <p><?=$obj->content;?>
+                  </p>
+              </div>
+            <?php } ?>
 
 
             <div class="col-md-4 archive-list">
