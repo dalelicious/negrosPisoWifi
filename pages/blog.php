@@ -25,7 +25,6 @@ $Id = (isset($_GET['Id']) && $_GET['Id'] != '') ? $_GET['Id'] : '';
     <section>
       <div class="container-fluid">
 
-
           <div class="row product-grid">
 
             <div class="col-md-8 blog-detail">
