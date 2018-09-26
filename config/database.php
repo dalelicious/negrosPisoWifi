@@ -4,7 +4,7 @@
 	    private static $dbName = 'db_pisowifi' ;
 	    private static $dbHost = 'localhost' ;
 	    private static $dbUsername = 'root';
-	    private static $dbUserPassword = '';
+	    private static $dbUserPassword = 'ProjectUrbanite01';
 	    private static $cont  = null;
 	    public function __construct() {
 	        die('Init function is not allowed');

@@ -10,7 +10,7 @@
                 <h1>Contact Us</h1>
                 <p>For faster transaction please contact us at:
                   <br>Phone numbers: <strong>Globe: 09457243966 / Smart: 09283216238</strong>
-                  <br>Email: <strong>negrospisowifi@gmail.com </strong>
+                  <br>Email: <strong>support@negrospisowifi.com </strong>
                 </p>
             </div>
         </div>

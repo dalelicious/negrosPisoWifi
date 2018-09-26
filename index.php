@@ -4,6 +4,10 @@
  ?>
 
     <div class="jumbotron" id="banner">
+	<div class="pull-right"> <iframe class="embed-responsive-item" width="280" height="200"
+src="https://www.youtube.com/embed/J6PKrhFA3Vs?controls=0" frameborder="0" allowfullscreen>
+</iframe>
+</div>
         <h1>Start Small. Earn Big.</h1>
         <h1>Start your business now!</h1>
         <p>Strictly for Negros Occidental</p>
