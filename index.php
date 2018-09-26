@@ -10,7 +10,7 @@
         <h1>Start your business now!</h1>
         <p>Strictly for Negros Occidental</p>
         <p><a class="btn btn-primary round-button" role="button" href="./pages/our-resellers.php">Buy now</a><button onclick="location.href='./pages/contact-us.php'" class="btn btn-primary round-button" type="button">Be our reseller</button></p>
-        <p>For inquiries ourside Negros Occidental...</p><button onClick="window.open('https://www.adopisowifi.com/buy');" class="btn btn-primary round-button" type="button" target="_blank">Ado Distributors</button>
+        <p>For inquiries outside Negros Occidental...</p><button onClick="window.open('https://www.adopisowifi.com/buy');" class="btn btn-primary round-button" type="button" target="_blank">Ado Distributors</button>
       </div>
       <div class="col-md-6">
         <iframe style="margin:20px;" class="embed-responsive-item" width="90%" height="90%"
