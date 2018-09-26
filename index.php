@@ -3,16 +3,23 @@
  include $ROOT."include/_header.php";
  ?>
 
-    <div class="jumbotron" id="banner">
-	<div class="pull-right"> <iframe class="embed-responsive-item" width="280" height="200"
-src="https://www.youtube.com/embed/J6PKrhFA3Vs?controls=0" frameborder="0" allowfullscreen>
-</iframe>
-</div>
+  <div class="jumbotron" id="banner">
+    <div class="row">
+      <div class="col-md-6">
         <h1>Start Small. Earn Big.</h1>
         <h1>Start your business now!</h1>
         <p>Strictly for Negros Occidental</p>
         <p><a class="btn btn-primary round-button" role="button" href="./pages/our-resellers.php">Buy now</a><button onclick="location.href='./pages/contact-us.php'" class="btn btn-primary round-button" type="button">Be our reseller</button></p>
-        <p>For inquiries ourside Negros Occidental...</p><button onClick="window.open('https://www.adopisowifi.com/buy');" class="btn btn-primary round-button" type="button" target="_blank">Ado Distributors</button></div>
+        <p>For inquiries ourside Negros Occidental...</p><button onClick="window.open('https://www.adopisowifi.com/buy');" class="btn btn-primary round-button" type="button" target="_blank">Ado Distributors</button>
+      </div>
+      <div class="col-md-6">
+        <iframe style="margin:20px;" class="embed-responsive-item" width="90%" height="90%"
+          src="https://www.youtube.com/embed/J6PKrhFA3Vs?controls=0" frameborder="0" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
