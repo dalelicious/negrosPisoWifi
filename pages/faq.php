@@ -1,7 +1,7 @@
 <?php
- $ROOT = "../";
- include $ROOT."include/_header.php";
- ?>
+$ROOT = "../";
+include $ROOT."include/_header.php";
+?>
 
 <section class="heading-title">
     <div class="container">

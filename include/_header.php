@@ -11,6 +11,7 @@
                         <li class="nav-item" role="presentation"><a class="nav-link" href="https://www.facebook.com/groups/294521197818788/" target="_blank">COMMUNITY</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="<?=$ROOT;?>pages/blog.php">BLOG</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="<?=$ROOT;?>pages/faq.php">FAQ</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?=$ROOT;?>pages/about.php">ABOUT</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="<?=$ROOT;?>pages/contact-us.php">CONTACT US</a></li>
                     </ul>
             </div>
