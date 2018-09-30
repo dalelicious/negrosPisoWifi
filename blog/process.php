@@ -51,8 +51,6 @@ function update()
 		$model->update("Id=$Id");
 
 		header('Location: ../admin.php?view=blogs&success=You have successfully updated a product');
-
-
 }
 
 
@@ -63,7 +61,6 @@ function delete()
 	blog()->delete("Id=$Id");
 
 	header('Location: ../admin.php?view=blogs&success=You have successfully deleted a product');
-
 }
 
 ?>

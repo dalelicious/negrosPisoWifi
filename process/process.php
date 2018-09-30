@@ -16,13 +16,13 @@ switch ($action) {
 
 function sendMessage()
 {
-	$messages = messages();
-	$messages->obj['name'] = $_POST['name'];
-	$messages->obj['shop_add'] = $_POST['shopAdd'];
-	$messages->obj['phone'] = $_POST['phone'];
-	$messages->obj['email'] = $_POST['email'];
-	$messages->obj['message'] = $_POST['message'];
-	$messages->create();
+	$message = message();
+	$message->obj['name'] = $_POST['name'];
+	$message->obj['shop_add'] = $_POST['shopAdd'];
+	$message->obj['phone'] = $_POST['phone'];
+	$message->obj['email'] = $_POST['email'];
+	$message->obj['message'] = $_POST['message'];
+	$message->create();
 
 	header('Location: ../home/');
 }
