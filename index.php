@@ -50,8 +50,9 @@
                             <h6><?=$key->brand;?></h6>
                             <h5><?=$key->name;?></h5>
                             <p><?=truncate($key->description,200);?><br></p>
+                            <h6><?=$key->price;?></h6>
                             <div class="price-border">
-                                <h4><?=$key->price;?></h4>
+                                <a href="./pages/contact-us.php" style="color: white;"><h4>Buy Now</h4></a>
                             </div>
                         </div>
                     </div>
@@ -95,7 +96,7 @@
                               <?=truncate($key->description,200);?>
                             </p>
 
-                            <h4><?=$key->price;?></h4><button class="btn btn-primary round-button" type="button">Buy Now</button>
+                            <h4><?=$key->price;?></h4><button class="btn btn-primary round-button" onclick="location.href='./pages/contact-us.php'" type="button">Buy Now</button>
                         </div>
                     </div>
                 </div>
