@@ -6,6 +6,15 @@ include_once($ROOT."config/Models.php");
 <html>
 
 <head>
+    <!-- Globalsite tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125953653-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-125953653-1');
+    </script>
+    <!-- End Google Analytics-->
     <meta charset="utf-8">
     <meta property="og:url"             content="https://negrospisowifi.com" />
     <meta property="og:type"            content="article" />

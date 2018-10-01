@@ -30,7 +30,7 @@ if($Id){
                 <img src="<?=$ROOT;?>media/<?=$obj->image;?>">
                 <h1><?=$obj->title;?></h1>
                 <h6><?=$obj->createDate;?></h6>
-                <p><?=$obj->content;?></p>
+                <p><?=nl2br($obj->content);?></p>
                 <?php } ?>
             </div>
             <div class="col-md-4 archive-list">
